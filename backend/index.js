@@ -31,11 +31,11 @@ oAuth2Client.setCredentials({ refresh_token: REFERESH_TOKEN });
 //environment variables
 const MONGO_URL =
   "mongodb+srv://grabwayhelpdesk:grabwayhelpdesk@grabway.blqc8ny.mongodb.net/";
-const PUBLIC_URL = "https://grabway.vercel.app";
+const PUBLIC_URL = "http://localhost:3000";
 const PORT = 8080;
 const jwtSecretKey = "VeryImportantSecret";
 
-const app = express(); 
+const app = express();
 app.use(cookieParser());
 app.use(express.json());
 app.use(
@@ -590,7 +590,7 @@ app.post("/routeUserSearch", async (req, res) => {
             },
           },
         ]);
-        //console.log(DriverResponse);
+        console.log(DriverResponse[0].address[0].city);
         for (let i = 0; i < DriverResponse.length; i++) {
           const DriverDetails = DriverResponse[i].routes;
           //console.log(DriverDetails);
@@ -665,6 +665,8 @@ app.post("/routeUserSearch", async (req, res) => {
                       VehcileModel: "Swift Dzire",
                       RouteAtIndex: j,
                       route: eachRoute,
+                      city: DriverResponse[i].address[0].city,
+                      state: DriverResponse[i].address[0].state,
                       driverName: DriverResponse[i].name,
                     };
                     MatchedData.push(RouteCardData);

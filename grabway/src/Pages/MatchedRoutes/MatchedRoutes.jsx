@@ -51,6 +51,8 @@ const MatchedRoutes = () => {
       return <Navigate to={"/googleRegistration"} />;
     }
   }
+
+  // console.log(matchedRoutes);
   return (
     <>
       {matchedRoutes === null && (

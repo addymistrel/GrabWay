@@ -69,7 +69,7 @@ const TopSection = ({ nonceVal, loginState }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDJaFr-HFXGBOg8pUSdQfGjGwGdIwtbXhY",
+    googleMapsApiKey: "AIzaSyBGgGCyJsOFVtYgPoE3_PcYmNL99yn6dsU",
     libraries: ["maps", "places"],
     mapIds: ["7e437361629e930a"],
     nonce: nonceVal,
@@ -85,7 +85,7 @@ const TopSection = ({ nonceVal, loginState }) => {
   async function getgeoCode(place, type) {
     await Geocode.fromAddress(
       place,
-      "AIzaSyDJaFr-HFXGBOg8pUSdQfGjGwGdIwtbXhY",
+      "AIzaSyBGgGCyJsOFVtYgPoE3_PcYmNL99yn6dsU",
       "en"
     ).then(
       (response) => {

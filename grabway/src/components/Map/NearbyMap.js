@@ -38,7 +38,7 @@ function MyComponentNearby({ nonceVal }, { route, state }) {
   // //console.log({ srcCord, destCord });
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDJaFr-HFXGBOg8pUSdQfGjGwGdIwtbXhY",
+    googleMapsApiKey: "AIzaSyBGgGCyJsOFVtYgPoE3_PcYmNL99yn6dsU",
     libraries: ["maps", "places"],
     mapIds: ["7e437361629e930a"],
     nonce: nonceVal,

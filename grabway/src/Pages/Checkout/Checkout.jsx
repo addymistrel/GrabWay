@@ -30,11 +30,12 @@ const Checkout = () => {
   const [confirmOrigin, setConfirmOrigin] = useState(false);
   const [paymentSelected, setPaymentSelected] = useState(null);
   const location = useLocation();
+  console.log(location);
   const matchDriverRoute = location.state.matchDriverRoute;
   const UserQuery = location.state.UserQuery;
   const driverName = matchDriverRoute.driverName;
-  const driverState = "West Bengal";
-  const driverCity = "Kolkata";
+  const driverState = location.state.state;
+  const driverCity = location.state.city;
   const originText = UserQuery.originText;
   const destinationText = UserQuery.destinationText;
   const pickupTime = UserQuery.originStartTime;

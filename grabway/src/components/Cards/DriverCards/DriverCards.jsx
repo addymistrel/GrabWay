@@ -27,6 +27,7 @@ function DriverCard(props) {
   const UserQuery = props.UserQuery;
   // //console.log("adiUserQuery);
 
+  // console.log(matchDriverRoute);
   async function handleMoreDetails(index) {
     const response = await axios
       .post("/moreDetailsForMatchRoutes", {
@@ -118,6 +119,8 @@ function DriverCard(props) {
                         <Link
                           to="/userCheckout"
                           state={{
+                            city: matchDriverRoute[driverIndex].city,
+                            state: matchDriverRoute[driverIndex].state,
                             matchDriverRoute: matchDriverRoute[driverIndex],
                             UserQuery: UserQuery,
                           }}
