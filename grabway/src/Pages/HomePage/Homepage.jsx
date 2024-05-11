@@ -441,7 +441,7 @@ const TopSection = ({ nonceVal, loginState }) => {
                         <div className="mr-[1%]">
                           <BiLeaf fill="#E51B23" />
                         </div>
-                        Our Vission
+                        Our Vision
                       </div>
                     </Heading>
                   </CardHeader>
