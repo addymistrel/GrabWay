@@ -135,4 +135,4 @@ If you have any feedback or suggestions please reach out to the Project-Maintain
 
 ## Thanks to all Collaborators 💪
 
-Thanks a lot for spending your time helping B-Donate grow. Thanks a lot! Keep rocking 🍻
+Thanks a lot for spending your time helping B-Donate grow. Thanks a lot! Keep rocking 🍻!!
